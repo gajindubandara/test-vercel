@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# TypeScript specific
+*.tsbuildinfo
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Dependency directory for Yarn
+.yarn/
+
+# NPM package-lock
+package-lock.json
+
+# Yarn lock file (if using Yarn)
+yarn.lock
+
+# Coverage reports
+coverage/
+
+# .env files for environment variables
+.env.*
+
+# Ignoring specific directories and files in the test folder
+test-results/
