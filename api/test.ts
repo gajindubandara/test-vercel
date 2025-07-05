@@ -1,10 +1,9 @@
-import express, { Request, Response } from "express";
+import express from "express";
+import serverless from "serverless-http";
 import { getTest } from "./controllers/testController";
 
 const app = express();
 
 app.get("/", getTest);
 
-export default function handler(req: Request, res: Response) {
-    app(req, res);
-}
+export const handler = serverless(app);
