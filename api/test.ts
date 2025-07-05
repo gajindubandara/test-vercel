@@ -1,6 +1,6 @@
 import express from "express";
 import serverless from "serverless-http";
-import { getTest } from "./controllers/testController.ts";
+import {getTest} from "./controllers/testController.js";
 
 const app = express();
 
