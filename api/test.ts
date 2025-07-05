@@ -6,4 +6,4 @@ const app = express();
 
 app.get("/", getTest);
 
-export const handler = serverless(app);
+export default serverless(app);
