@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const testController_1 = require("./controllers/testController");
 const app = (0, express_1.default)();
 const port = process.env.PORT || 8080;
 app.get('/', (_req, res) => {
@@ -12,6 +13,7 @@ app.get('/', (_req, res) => {
 app.get('/ping', (_req, res) => {
     return res.send('pong 🏓');
 });
+app.get("/test", testController_1.getTest);
 app.listen(port, () => {
     return console.log(`Server is listening on ${port}`);
 });
